@@ -166,3 +166,5 @@ _deps
 *-prefix/
 
 # End of https://www.toptal.com/developers/gitignore/api/clion,c++,cmake
+
+./lib/asio-1.28.0/
