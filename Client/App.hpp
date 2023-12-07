@@ -1,11 +1,13 @@
 #pragma once
-
-/*#ifndef ONLINE_CHAT_APP_HPP
-#define ONLINE_CHAT_APP_HPP
-
-#endif //ONLINE_CHAT_APP_HPP*/
-
 #include <iostream>
-#include <vector>
 #include <string>
-#include <system_error>
+#include <asio.hpp>
+
+namespace Client {
+
+    std::string getData(asio::ip::tcp::socket& socket);
+
+    void sendData(asio::ip::tcp::socket& socket, const std::string& message);
+
+}
+

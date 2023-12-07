@@ -7,4 +7,4 @@ set(HEADERS App.hpp)
 
 add_executable(${CLIENT_NAME} ${SOURCE} ${HEADERS})
 
-include_directories(${PROJECT_SOURCE_DIR}/utils "../lib/asio-1.28.0/include")
+include_directories("../lib/asio-1.28.0/include")
