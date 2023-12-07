@@ -5,4 +5,7 @@ set(SOURCE main.cpp
 
 set(HEADERS App.hpp)
 
+
 add_executable(${CLIENT_NAME} ${SOURCE} ${HEADERS})
+
+include_directories("../lib/asio-1.28.0/include")

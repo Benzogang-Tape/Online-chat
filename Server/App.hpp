@@ -1,19 +1,20 @@
 #include <system_error>
 #include <optional>
+#include "asio.hpp"
 
 
 namespace OnlineChat{
 
     struct server {
-        boost::asio::io_context& io_context;
-        boost::asio::ip::tcp::acceptor acceptor;
-        std::optional<boost::asio::ip::tcp::socket> socket;
+        asio::io_context& io_context;
+        asio::ip::tcp::acceptor acceptor;
+        std::optional<asio::ip::tcp::socket> socket;
 
-        server(boost::asio::io_context& io_context, std::uint16_t port) :
+        server(asio::io_context& io_context, std::uint16_t port) :
                 io_context(io_context),
                 acceptor(
                         io_context,
-                        boost::asio::ip::tcp::endpoint(boost::asio::ip::tcp::v4(), port)) {}
+                        asio::ip::tcp::endpoint(asio::ip::tcp::v4(), port)) {}
 
         void async_accept();
     };
