@@ -44,11 +44,6 @@
 /lib/
 .idea
 ./.idea/
-./Server/
-Server/
-Server
-main.cpp
-CMakeLists.txt
 
 ### CLion ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
