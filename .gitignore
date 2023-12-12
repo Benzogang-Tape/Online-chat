@@ -35,16 +35,8 @@
 *.out
 *.app
 
-./lib/asio-1.28.0/*
-./lib/asio-1.28.0/**/
-lib/asio-1.28.0/*
-#./lib
-#./lib/
-#./lib/asio-1.28.0/
-#/lib/asio-1.28.0/
-#/lib/
-.idea
-./.idea/
+
+.idea/
 
 ### CLion ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
