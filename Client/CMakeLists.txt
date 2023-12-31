@@ -1,11 +1,12 @@
-set(CLIENT_NAME ${PROJECT_NAME}-client)
+set (CLIENT_NAME ${PROJECT_NAME}-client)
 
-set(SOURCE main.cpp
+set (SOURCE main.cpp
         App.cpp)
 
-set(HEADERS App.hpp)
+set (HEADERS App.hpp
+        ${PROJECT_SOURCE_DIR}/Message/message.hpp)
 
+include_directories(${PROJECT_SOURCE_DIR}/Message
+        "\\wsl.localhost/Ubuntu/usr/include/boost")
 
 add_executable(${CLIENT_NAME} ${SOURCE} ${HEADERS})
-
-include_directories("../lib/asio-1.28.0/include")
