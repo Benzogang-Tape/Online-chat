@@ -1,3 +1,4 @@
+#pragma once
 #ifndef ONLINE_CHAT_MESSAGE_HPP
 #define ONLINE_CHAT_MESSAGE_HPP
 
